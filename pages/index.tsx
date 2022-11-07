@@ -63,10 +63,10 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.imageSide}>
-           Image Preview of NFTs 
+          {/* Image Preview of NFTs 
           <img
             className={styles.image}
-            src={"https://www.youtube.com/watch?v=XHOmBV4js_E"}
+            src={contractMetadata?.image}
             alt={`${contractMetadata?.name} preview image`}
           />
 

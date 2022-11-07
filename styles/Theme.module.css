@@ -8,8 +8,8 @@
 }
 
 .previewImage {
-  height: 500px;
-  width: 500px;
+  height: 0px;
+  width: 0px;
   border-radius: 16px;
   border: 1px solid var(--border-color);
   padding: 8px;
