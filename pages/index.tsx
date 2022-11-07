@@ -62,11 +62,11 @@ const Home: NextPage = () => {
           <p className={styles.description}>{contractMetadata?.description}</p>*/}
         </div>
 
-        {/*<div className={styles.imageSide}>
+        <div className={styles.imageSide}>
            Image Preview of NFTs 
           <img
             className={styles.image}
-            src={contractMetadata?.image}
+            src={"https://www.youtube.com/watch?v=XHOmBV4js_E"}
             alt={`${contractMetadata?.name} preview image`}
           />
 
