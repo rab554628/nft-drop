@@ -47,7 +47,7 @@ const Home: NextPage = () => {
   // Multiply depending on quantity
   const priceToMint = price.mul(quantity);
 
-  // Loading state while we fetch the metadata
+  // Loading state while we fetch the metadata  
   if (!nftDrop || !contractMetadata) {
     return <div className={styles.container}>Loading...</div>;
   }
