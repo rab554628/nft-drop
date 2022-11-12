@@ -12,7 +12,7 @@ import { useState } from "react";
 import styles from "../styles/Theme.module.css";
 
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = "0x9892552D7CB3EA3E8950cfb5161833929A4A0141"; 
+const myNftDropContractAddress = "0x15f206C28fC481C8109522DA67137ac9eB49CAe0"; 
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);
@@ -56,10 +56,10 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className={styles.mintInfoContainer}>
         <div className={styles.infoSide}>
-          {/* Title of your NFT Collection 
+          {/* Title of your NFT Collection */}
           <h1>{contractMetadata?.name}</h1>
-          {/* Description of your NFT Collection 
-          <p className={styles.description}>{contractMetadata?.description}</p>*/}
+          {/* Description of your NFT Collection </p>*/}
+          <p className={styles.description}>{contractMetadata?.description}</p>
         </div>
 
         <div className={styles.imageSide}>
@@ -148,7 +148,7 @@ const Home: NextPage = () => {
                     }
                     // If the function fails, we can do something here.
                     onError={(error) => alert(error?.message)}
-                    accentColor="#f8450b"
+                    accentColor="#54D12E"
                     colorMode="dark"
                   >
                     {`Mint${quantity > 1 ? ` ${quantity}` : ""}${
