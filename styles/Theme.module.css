@@ -17,12 +17,12 @@
 
 .mintInfoContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   padding: 0 24px;
-  min-height: 720px;
+  min-height: 300px;
   max-width: 95vw;
   gap: 2%;
   border: 0px solid var(--border-color);
