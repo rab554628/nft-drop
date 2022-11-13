@@ -55,20 +55,8 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.mintInfoContainer}>
-        {/*<div className={styles.infoSide}>
-           Title of your NFT Collection 
-          <h1>{contractMetadata?.name}</h1>
-          {/* Description of your NFT Collection 
-          <p className={styles.description}>{contractMetadata?.description}</p>
-        </div>*/}
-
+        
         <div className={styles.imageSide}>
-          {/* Image Preview of NFTs 
-          <img
-            className={styles.image}
-            src={contractMetadata?.image}
-            alt={`${contractMetadata?.name} preview image`}
-          />
 
           {/* Amount claimed so far */}
           <div className={styles.mintCompletionArea}>
