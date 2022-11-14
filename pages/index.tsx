@@ -133,7 +133,6 @@ const Home: NextPage = () => {
           {/* Amount claimed so far */}
           <div className={styles.mintCompletionArea}>
             
-            <div className={styles.mintAreaRight}>
               {claimedSupply && unclaimedSupply ? (
                 <p>
                   {/* Claimed supply so far */}
@@ -149,9 +148,11 @@ const Home: NextPage = () => {
                 // Show loading state if we're still loading the supply
                 <p>Loading...</p>
               )}
-            </div>
-            {/* <div className={styles.mintAreaLeft}>
+            {/*
+             <div className={styles.mintAreaLeft}>
               <p>Minted</p>
+            </div>
+            <div className={styles.mintAreaRight}>
             </div>*/}
           </div>
         </div>
