@@ -54,14 +54,14 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.mintInfoContainer}>
+      {/*<div className={styles.mintInfoContainer}></div>
 
-        {/*<div className={styles.imageSide}></div>
+        <div className={styles.imageSide}></div>
 
            Amount claimed so far */}
           <div className={styles.mintCompletionArea}>
             <div className={styles.mintAreaLeft}>
-              <p>Total Minted</p>
+              <p>Total Minted2</p>
             </div>
             <div className={styles.mintAreaRight}>
               {claimedSupply && unclaimedSupply ? (
@@ -155,7 +155,7 @@ const Home: NextPage = () => {
             )
           }
         
-      </div>
+      
       
     </div>
   );
