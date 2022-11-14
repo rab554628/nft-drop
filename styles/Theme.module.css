@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 300px;
+  min-height: 100px;
   max-width: 95vw;
   gap: 2%;
   border: 0px solid var(--border-color);
