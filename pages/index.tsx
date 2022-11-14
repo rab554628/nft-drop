@@ -56,29 +56,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className={styles.mintInfoContainer}>
         <div className={styles.imageSide}>
-          {/* Amount claimed so far */}
-          <div className={styles.mintCompletionArea}>
-            <div className={styles.mintAreaLeft}>
-              <p>Total Minted</p>
-            </div>
-            <div className={styles.mintAreaRight}>
-              {claimedSupply && unclaimedSupply ? (
-                <p>
-                  {/* Claimed supply so far */}
-                  <b>{claimedSupply?.toNumber()}</b>
-                  {" / "}
-                  {
-                    // Add unclaimed and claimed supply to get the total supply
-                    claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
-                  }
-                </p>
-              ) : (
-                // Show loading state if we're still loading the supply
-                <p>Loading...</p>
-              )}
-            </div>
-          </div>
-
+          
           {/* Show claim button or connect wallet button */}
           {
             // Sold out or show the claim button
@@ -152,6 +130,29 @@ const Home: NextPage = () => {
               </>
             )
           }
+          {/* Amount claimed so far */}
+          <div className={styles.mintCompletionArea}>
+            
+            <div className={styles.mintAreaRight}>
+              {claimedSupply && unclaimedSupply ? (
+                <p>
+                  {/* Claimed supply so far */}
+                  <b>{claimedSupply?.toNumber()}</b>
+                  {" / "}
+                  {
+                    // Add unclaimed and claimed supply to get the total supply
+                    claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
+                  }
+                </p>
+              ) : (
+                // Show loading state if we're still loading the supply
+                <p>Loading...</p>
+              )}
+            </div>
+            <div className={styles.mintAreaLeft}>
+              <p>Minted</p>
+            </div>
+          </div>
         </div>
       </div>
       
