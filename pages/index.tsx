@@ -55,10 +55,10 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.mintInfoContainer}>
-        
-        <div className={styles.imageSide}>
 
-          {/* Amount claimed so far */}
+        {/*<div className={styles.imageSide}></div>
+
+           Amount claimed so far */}
           <div className={styles.mintCompletionArea}>
             <div className={styles.mintAreaLeft}>
               <p>Total Minted</p>
@@ -154,7 +154,7 @@ const Home: NextPage = () => {
               </>
             )
           }
-        </div>
+        
       </div>
       
     </div>
