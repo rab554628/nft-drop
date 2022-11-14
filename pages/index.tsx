@@ -143,15 +143,16 @@ const Home: NextPage = () => {
                     // Add unclaimed and claimed supply to get the total supply
                     claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
                   }
+                  {" Minted "}
                 </p>
               ) : (
                 // Show loading state if we're still loading the supply
                 <p>Loading...</p>
               )}
             </div>
-            <div className={styles.mintAreaLeft}>
+            {/* <div className={styles.mintAreaLeft}>
               <p>Minted</p>
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>
