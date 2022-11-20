@@ -12,7 +12,7 @@ import { useState } from "react";
 import styles from "../styles/Theme.module.css";
 
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = "0xB390d2b3dd0Fc1e2dF154ebf81d4FA63D1FA1065";
+const myNftDropContractAddress = "0x6b566949De64C3c533499Ab0B05FD3f868BEDE83";
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
           {/* Image Preview of NFTs */}
           <img
             className={styles.image}
-            src={contractMetadata?.image}
+            src={"/gif1.gif"}
             alt={`${contractMetadata?.name} preview image`}
           />
           
