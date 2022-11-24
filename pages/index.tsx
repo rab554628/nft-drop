@@ -56,10 +56,10 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className={styles.mintInfoContainer}>
         <div className={styles.imageSide}>
-          {/* Image Preview of NFTs *
+          {/* Image Preview of NFTs */}
           <img
             className={styles.image}
-            src={contractMetadata?.image}
+            src={"/png1.png"}
             alt={`${contractMetadata?.name} preview image`}
           />
           
