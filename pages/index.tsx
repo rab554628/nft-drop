@@ -56,10 +56,10 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className={styles.mintInfoContainer}>
         <div className={styles.infoSide}>
-          {/* Title of your NFT Collection */}
+          {/* Title of your NFT Collection 
           <h1>{contractMetadata?.name}</h1>
-          {/* Description of your NFT Collection </p>*/}
-          <p className={styles.description}>{contractMetadata?.description}</p>
+          {/* Description of your NFT Collection </p>
+          <p className={styles.description}>{contractMetadata?.description}</p>*/}
         </div>
 
         <div className={styles.imageSide}>
