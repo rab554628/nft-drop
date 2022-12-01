@@ -12,7 +12,7 @@ import { useState } from "react";
 import styles from "../styles/Theme.module.css";
 
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = "0x81E2cd74eaEa6a2cf343E1b64EC4AA4fF6Dd9FF8";
+const myNftDropContractAddress = "0xB88c31cFBCd601ed4702F0186170C8b3BE8d0293"; 
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
   // Multiply depending on quantity
   const priceToMint = price.mul(quantity);
 
-  // Loading state while we fetch the metadata
+  // Loading state while we fetch the metadata  
   if (!nftDrop || !contractMetadata) {
     return <div className={styles.container}>Loading...</div>;
   }
@@ -55,14 +55,44 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.mintInfoContainer}>
+        <div className={styles.infoSide}>
+          {/* Title of your NFT Collection 
+          <h1>{contractMetadata?.name}</h1>
+          {/* Description of your NFT Collection </p>
+          <p className={styles.description}>{contractMetadata?.description}</p>*/}
+        </div>
+
         <div className={styles.imageSide}>
           {/* Image Preview of NFTs */}
           <img
             className={styles.image}
-            src={contractMetadata?.image} //src={"../png1.png"}
+            src={contractMetadata?.image}
             alt={`${contractMetadata?.name} preview image`}
           />
-          
+
+          {/* Amount claimed so far */}
+          <div className={styles.mintCompletionArea}>
+            <div className={styles.mintAreaLeft}>
+              <p>Total Minted</p>
+            </div>
+            <div className={styles.mintAreaRight}>
+              {claimedSupply && unclaimedSupply ? (
+                <p>
+                  {/* Claimed supply so far */}
+                  <b>{claimedSupply?.toNumber()}</b>
+                  {" / "}
+                  {
+                    // Add unclaimed and claimed supply to get the total supply
+                    claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
+                  }
+                </p>
+              ) : (
+                // Show loading state if we're still loading the supply
+                <p>Loading...</p>
+              )}
+            </div>
+          </div>
+
           {/* Show claim button or connect wallet button */}
           {
             // Sold out or show the claim button
@@ -76,7 +106,7 @@ const Home: NextPage = () => {
               </div>
             ) : (
               <>
-                
+                <p>Quantity</p>
                 <div className={styles.quantityContainer}>
                   <button
                     className={`${styles.quantityControlButton}`}
@@ -136,31 +166,6 @@ const Home: NextPage = () => {
               </>
             )
           }
-          {/* Amount claimed so far */}
-          <div className={styles.mintCompletionArea}>
-            
-              {claimedSupply && unclaimedSupply ? (
-                <p>
-                  {/* Claimed supply so far */}
-                  <b>{claimedSupply?.toNumber()}</b>
-                  {" / "}
-                  {
-                    // Add unclaimed and claimed supply to get the total supply
-                    claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
-                  }
-                  {" Minted."}
-                </p>
-              ) : (
-                // Show loading state if we're still loading the supply
-                <p>Loading...</p>
-              )}
-            {/*
-             <div className={styles.mintAreaLeft}>
-              <p>Minted</p>
-            </div>
-            <div className={styles.mintAreaRight}>
-            </div>*/}
-          </div>
         </div>
       </div>
       
