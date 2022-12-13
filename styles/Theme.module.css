@@ -46,7 +46,10 @@
 }
 
 .image {
-  width: 85%;
+  height: 500px;
+  width: 50px;
+  border-radius: 16px;
+  max-width: 50px;
   border-radius: 16px;
 }
 
