@@ -61,7 +61,6 @@ const Home: NextPage = () => {
             className={styles.image}
             src={"../png1.png"}
             alt={`${contractMetadata?.name} preview image`}
-            style={"width:50px"}
           />
           
           {/* Show claim button or connect wallet button */}
