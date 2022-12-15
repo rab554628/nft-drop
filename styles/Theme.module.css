@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   width: 100vw;
 }
@@ -45,7 +45,7 @@
 }
 
 .image {
-  width: 85%;
+  width: 50px;
   border-radius: 16px;
 }
 
