@@ -44,11 +44,6 @@
   align-items: center;
 }
 
-.image {
-  height: 500px;
-  border-radius: 16px;
-}
-
 .buttons {
   display: flex;
   justify-content: center;
@@ -169,6 +164,11 @@
   opacity: 0.25;
 }
 
+.image {
+  height: 500px;
+  border-radius: 16px;
+}
+
 /* On mobile, make the .mintInfoContainer stack vertically */
 @media screen and (max-width: 500px) {
   .mintInfoContainer {
@@ -183,6 +183,7 @@
   .imageSide {
     width: 100%;
   }
+
   .mintContainer {
     display: flex;
     flex-direction: row;
@@ -193,5 +194,17 @@
     margin-bottom: 60px;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .image {
+    height: 440px;
+    border-radius: 16px;
+  }
   
 }
