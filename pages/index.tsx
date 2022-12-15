@@ -107,7 +107,31 @@ const Home: NextPage = () => {
               </div>
             ) : (
               <>
-                
+                {/* Amount claimed so far */}
+          <div className={styles.mintCompletionArea}>
+            
+            {claimedSupply && unclaimedSupply ? (
+              <p>
+                {/* Claimed supply so far */}
+                <b>{claimedSupply?.toNumber()}</b>
+                {" / "}
+                {
+                  // Add unclaimed and claimed supply to get the total supply
+                  claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
+                }
+                {" Minted."}
+              </p>
+            ) : (
+              // Show loading state if we're still loading the supply
+              <p>Loading...</p>
+            )}
+          {/*
+           <div className={styles.mintAreaLeft}>
+            <p>Minted</p>
+          </div>
+          <div className={styles.mintAreaRight}>
+          </div>*/}
+        </div>
                 <div className={styles.quantityContainer}>
                   <button
                     className={`${styles.quantityControlButton}`}
@@ -137,31 +161,7 @@ const Home: NextPage = () => {
               </>
             )
           }
-          {/* Amount claimed so far */}
-          <div className={styles.mintCompletionArea}>
-            
-              {claimedSupply && unclaimedSupply ? (
-                <p>
-                  {/* Claimed supply so far */}
-                  <b>{claimedSupply?.toNumber()}</b>
-                  {" / "}
-                  {
-                    // Add unclaimed and claimed supply to get the total supply
-                    claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
-                  }
-                  {" Minted."}
-                </p>
-              ) : (
-                // Show loading state if we're still loading the supply
-                <p>Loading...</p>
-              )}
-            {/*
-             <div className={styles.mintAreaLeft}>
-              <p>Minted</p>
-            </div>
-            <div className={styles.mintAreaRight}>
-            </div>*/}
-          </div>
+          
         </div>
       </div>
       
