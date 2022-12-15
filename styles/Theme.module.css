@@ -183,4 +183,12 @@
   .imageSide {
     width: 100%;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100vw;
+  }
 }
