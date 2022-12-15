@@ -139,7 +139,8 @@
   align-items: center;
   justify-content: center;
   gap: 10%;
-  margin-bottom: : 80px;
+  margin-top: 24px;
+  margin-bottom: 50px;
 }
 
 .textInput {
