@@ -45,7 +45,7 @@
 }
 
 .image {
-  width: 50px;
+  height: 500px;
   border-radius: 16px;
 }
 
@@ -170,7 +170,7 @@
 }
 
 /* On mobile, make the .mintInfoContainer stack vertically */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 500px) {
   .mintInfoContainer {
     flex-direction: column;
     padding-bottom: 5%;
@@ -191,4 +191,10 @@
     justify-content: center;
     width: 100vw;
   }
+
+  .image {
+    height: 300px;
+    border-radius: 16px;
+  }
+  
 }
