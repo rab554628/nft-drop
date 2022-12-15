@@ -140,7 +140,7 @@
   justify-content: center;
   gap: 10%;
   margin-top: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .textInput {
@@ -183,18 +183,15 @@
   .imageSide {
     width: 100%;
   }
-
-  .container {
+  .mintContainer {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    width: 100vw;
+    gap: 10%;
+    margin-top: 24px;
+    margin-bottom: 60px;
   }
 
-  .image {
-    height: 300px;
-    border-radius: 16px;
-  }
   
 }
