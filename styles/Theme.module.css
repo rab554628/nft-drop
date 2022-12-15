@@ -170,7 +170,7 @@
 }
 
 /* On mobile, make the .mintInfoContainer stack vertically */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   .mintInfoContainer {
     flex-direction: column;
     padding-bottom: 5%;
@@ -186,11 +186,11 @@
 
   .mintContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
     justify-content: center;
     gap: 10%;
-    margin-top: 24px;
     margin-bottom: 60px;
   }
 
@@ -203,7 +203,7 @@
   }
 
   .image {
-    height: 440px;
+    height: 400px;
     border-radius: 16px;
   }
   
