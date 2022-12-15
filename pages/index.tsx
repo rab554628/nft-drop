@@ -54,6 +54,37 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.mintContainer}>
+                  <Web3Button
+                    contractAddress={myNftDropContractAddress}
+                    action={async (contract) =>
+                      await contract.erc721.claim(quantity)
+                    }
+                    // If the function is successful, we can do something here.
+                    onSuccess={(result) =>
+                      alert(
+                        `Successfully minted ${result.length} NFT${
+                          result.length > 1 ? "s" : ""
+                        }!`
+                      )
+                    }
+                    // If the function fails, we can do something here.
+                    onError={(error) => alert(error?.message)}
+                    accentColor="#e4c045"
+                    colorMode="dark"
+                  >
+                    {`Mint${quantity > 1 ? ` ${quantity}` : ""}${
+                      activeClaimCondition?.price.eq(0)
+                        ? " (Free)"
+                        : activeClaimCondition?.currencyMetadata.displayValue
+                        ? ` (${formatUnits(
+                            priceToMint,
+                            activeClaimCondition.currencyMetadata.decimals
+                          )} ${activeClaimCondition?.currencyMetadata.symbol})`
+                        : ""
+                    }`}
+                  </Web3Button>
+                </div>
       <div className={styles.mintInfoContainer}>
         <div className={styles.imageSide}>
           {/* Image Preview of NFTs */}
@@ -102,37 +133,7 @@ const Home: NextPage = () => {
                   </button>
                 </div>
 
-                <div className={styles.mintContainer}>
-                  <Web3Button
-                    contractAddress={myNftDropContractAddress}
-                    action={async (contract) =>
-                      await contract.erc721.claim(quantity)
-                    }
-                    // If the function is successful, we can do something here.
-                    onSuccess={(result) =>
-                      alert(
-                        `Successfully minted ${result.length} NFT${
-                          result.length > 1 ? "s" : ""
-                        }!`
-                      )
-                    }
-                    // If the function fails, we can do something here.
-                    onError={(error) => alert(error?.message)}
-                    accentColor="#e4c045"
-                    colorMode="dark"
-                  >
-                    {`Mint${quantity > 1 ? ` ${quantity}` : ""}${
-                      activeClaimCondition?.price.eq(0)
-                        ? " (Free)"
-                        : activeClaimCondition?.currencyMetadata.displayValue
-                        ? ` (${formatUnits(
-                            priceToMint,
-                            activeClaimCondition.currencyMetadata.decimals
-                          )} ${activeClaimCondition?.currencyMetadata.symbol})`
-                        : ""
-                    }`}
-                  </Web3Button>
-                </div>
+                
               </>
             )
           }
