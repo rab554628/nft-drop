@@ -119,7 +119,7 @@ const Home: NextPage = () => {
                 <p>Loading...</p>
               )}
           </div>
-          <div className={styles.container_c}>
+          <div className={styles.quantityContainer}>
           <button
                     className={`${styles.quantityControlButton}`}
                     onClick={() => setQuantity(quantity - 1)}
