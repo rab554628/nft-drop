@@ -167,7 +167,7 @@
 }
 
 .image {
-  height: 500px;
+  height: 450px;
   border-radius: 16px;
 }
 
@@ -192,8 +192,8 @@
   flex-direction: row;
   align-items:center;
   justify-content: center;
-  width : 300px;
-  height: 80px;
+  width : 280px;
+  height: 75px;
   background-color:black;
 }
 
@@ -204,8 +204,8 @@
   justify-content: center;
   gap: 20%;
   font-size: 24px;
-  width : 300px;
-  height: 80px;
+  width : 280px;
+  height: 75px;
   background-color:black;
 }
 /* On mobile, make the .mintInfoContainer stack vertically */
@@ -221,7 +221,7 @@
 
 
   .image {
-    height: 500px;
+    height: 300px;
     border-radius: 16px;
   }
   
