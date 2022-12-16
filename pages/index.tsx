@@ -54,8 +54,22 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.mintContainer}>
-                  <Web3Button
+      <div className={styles.container_a}>
+        {/* Image Preview of NFTs */}
+        <img
+            className={styles.image}
+            src={"../png1.png"}
+            alt={`${contractMetadata?.name} preview image`}
+          />
+      </div>
+
+      <div className={styles.container_a}>
+        <div className={styles.container_b}>
+          <div className={styles.container_c}>
+          <h2>Free Mint</h2>
+          </div>
+          <div className={styles.container_c}>
+          <Web3Button
                     contractAddress={myNftDropContractAddress}
                     action={async (contract) =>
                       await contract.erc721.claim(quantity)
@@ -84,56 +98,29 @@ const Home: NextPage = () => {
                         : ""
                     }`}
                   </Web3Button>
-                </div>
-      <div className={styles.mintInfoContainer}>
-        <div className={styles.imageSide}>
-          {/* Image Preview of NFTs */}
-          <img
-            className={styles.image}
-            src={"../png1.png"}
-            alt={`${contractMetadata?.name} preview image`}
-          />
-          
-          {/* Show claim button or connect wallet button */}
-          {
-            // Sold out or show the claim button
-            isSoldOut ? (
-              <div>
-                <h2>Sold Out</h2>
-              </div>
-            ) : isNotReady ? (
-              <div>
-                <h2>Not ready to be minted yet</h2>
-              </div>
-            ) : (
-              <>
-                {/* Amount claimed so far */}
-          <div className={styles.mintCompletionArea}>
-            
-            {claimedSupply && unclaimedSupply ? (
-              <p>
-                {/* Claimed supply so far */}
-                <b>{claimedSupply?.toNumber()}</b>
-                {" / "}
-                {
-                  // Add unclaimed and claimed supply to get the total supply
-                  claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
-                }
-                {" Minted."}
-              </p>
-            ) : (
-              // Show loading state if we're still loading the supply
-              <p>Loading...</p>
-            )}
-          {/*
-           <div className={styles.mintAreaLeft}>
-            <p>Minted</p>
           </div>
-          <div className={styles.mintAreaRight}>
-          </div>*/}
-        </div>
-                <div className={styles.quantityContainer}>
-                  <button
+        </div>    
+
+        <div className={styles.container_b}>
+          <div className={styles.container_c}>
+            {claimedSupply && unclaimedSupply ? (
+                <p>
+                  {/* Claimed supply so far */}
+                  <b>{claimedSupply?.toNumber()}</b>
+                  {" / "}
+                  {
+                    // Add unclaimed and claimed supply to get the total supply
+                    claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
+                  }
+                  {" Minted."}
+                </p>
+              ) : (
+                // Show loading state if we're still loading the supply
+                <p>Loading...</p>
+              )}
+          </div>
+          <div className={styles.container_c}>
+          <button
                     className={`${styles.quantityControlButton}`}
                     onClick={() => setQuantity(quantity - 1)}
                     disabled={quantity <= 1}
@@ -155,15 +142,17 @@ const Home: NextPage = () => {
                   >
                     +
                   </button>
-                </div>
+          </div>
+        </div>    
 
-                
-              </>
-            )
-          }
-          
-        </div>
+
       </div>
+
+
+
+
+      
+      
       
     </div>
   );
