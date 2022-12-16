@@ -159,6 +159,7 @@
 
 .container {
   display: flex;
+  height: 800px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -200,8 +201,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-between;
-  gap: 10%;
+  justify-content: center;
+  gap: 20%;
   font-size: 24px;
   width : 300px;
   height: 80px;
@@ -209,40 +210,18 @@
 }
 /* On mobile, make the .mintInfoContainer stack vertically */
 @media screen and (max-width: 450px) {
-  .container {
+
+  .container_a {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-end;
+    flex-direction:column-reverse;
+    align-items: center;
     justify-content: center;
     width: 100vw;
   }
 
-  .mintInfoContainer {
-    flex-direction: column;
-    padding-bottom: 5%;
-  }
-
-  .infoSide {
-    width: 100%;
-  }
-
-  .imageSide {
-    width: 100%;
-  }
-
-  .mintContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-
 
   .image {
-    height: 400px;
+    height: 500px;
     border-radius: 16px;
   }
   
