@@ -195,10 +195,11 @@
 
 .container_c {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
   justify-content: center;
   width : 300px;
+  background-color: aqua;
 }
 /* On mobile, make the .mintInfoContainer stack vertically */
 @media screen and (max-width: 450px) {
