@@ -66,7 +66,7 @@ const Home: NextPage = () => {
       <div className={styles.container_a}>
         <div className={styles.container_b}>
           <div className={styles.container_c}>
-          <h2>Free Mint</h2>
+          <h3>Price: Free + Gas Fee </h3>
           </div>
           <div className={styles.container_c}>
           <Web3Button
@@ -104,7 +104,7 @@ const Home: NextPage = () => {
         <div className={styles.container_b}>
           <div className={styles.container_c}>
             {claimedSupply && unclaimedSupply ? (
-                <p>
+                <h3>
                   {/* Claimed supply so far */}
                   <b>{claimedSupply?.toNumber()}</b>
                   {" / "}
@@ -113,7 +113,7 @@ const Home: NextPage = () => {
                     claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
                   }
                   {" Minted."}
-                </p>
+                </h3>
               ) : (
                 // Show loading state if we're still loading the supply
                 <p>Loading...</p>
