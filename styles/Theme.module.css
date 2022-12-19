@@ -184,15 +184,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width:100vw
   
 }
 
 .container_c {
- display: flex;
+  display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items:center;
   justify-content: center;
-  gap: 10%;
   height: 75px;
   background-color:black;
 }
@@ -202,7 +202,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 10%;
+  gap: 20%;
+  font-size: 24px;
   height: 75px;
   background-color:black;
 }
