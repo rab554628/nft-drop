@@ -216,6 +216,7 @@
   gap: 20%;
   font-size: 24px;
   height: 75px;
+  width:50vw;
   
 }
 
@@ -227,7 +228,7 @@
   gap: 20%;
   font-size: 24px;
   height: 75px;
-  width:700px
+  width:50vw;
   
 }
 /* On mobile, make the .mintInfoContainer stack vertically */
