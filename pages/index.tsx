@@ -66,21 +66,8 @@ const Home: NextPage = () => {
       <div className={styles.container_a}>
         <div className={styles.container_b}>
           <div className={styles.container_c}>
-          {claimedSupply && unclaimedSupply ? (
-                <h3>
-                  {/* Claimed supply so far */}
-                  <b>{claimedSupply?.toNumber()}</b>
-                  {" / "}
-                  {
-                    // Add unclaimed and claimed supply to get the total supply
-                    claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
-                  }
-                  {" Minted."}
-                </h3>
-              ) : (
-                // Show loading state if we're still loading the supply
-                <p>Loading...</p>
-              )}          </div>
+          <h3>Price: Free + Gas Fee </h3>
+              </div>
           <div className={styles.container_c}>
           <Web3Button
                     contractAddress={myNftDropContractAddress}
@@ -116,8 +103,22 @@ const Home: NextPage = () => {
 
         <div className={styles.container_b}>
           <div className={styles.container_c}>
-            <h3>Price: Free + Gas Fee </h3>
-          </div>
+          {claimedSupply && unclaimedSupply ? (
+                <h3>
+                  {/* Claimed supply so far */}
+                  <b>{claimedSupply?.toNumber()}</b>
+                  {" / "}
+                  {
+                    // Add unclaimed and claimed supply to get the total supply
+                    claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
+                  }
+                  {" Minted."}
+                </h3>
+              ) : (
+                // Show loading state if we're still loading the supply
+                <p>Loading...</p>
+              )} 
+              </div>
           <div className={styles.quantityContainer}>
           <button
                     className={`${styles.quantityControlButton}`}
