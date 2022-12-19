@@ -244,6 +244,7 @@
     justify-content: center;
     width: 100vw;
   }
+
   .container_c1 {
     display: flex;
     flex-direction: row;
@@ -251,7 +252,6 @@
     justify-content: center;
     height: 75px;
     width: 100vw;
-    
   }
   
   .container_c2 {
@@ -260,8 +260,7 @@
     align-items:center;
     justify-content: center;
     height: 75px;
-    
-    
+    width: 100vw;
   }
   
   .buttonContainer {
@@ -272,8 +271,7 @@
     gap: 20%;
     font-size: 24px;
     height: 75px;
-    
-    
+    width: 100vw;
   }
   
   .quantityContainer {
@@ -284,7 +282,7 @@
     gap: 20%;
     font-size: 24px;
     height: 75px;
-    
+    width: 100vw;
   }  
 }
 
