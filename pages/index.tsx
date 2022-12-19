@@ -68,7 +68,7 @@ const Home: NextPage = () => {
           <div className={styles.container_c1}>
           <h3>Price: Free + Gas Fee </h3>
               </div>
-          <div className={styles.buttonContainer}>
+          <div className={styles.container_c1}>
           <Web3Button
                     contractAddress={myNftDropContractAddress}
                     action={async (contract) =>
