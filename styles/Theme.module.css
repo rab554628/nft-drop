@@ -244,48 +244,47 @@
     justify-content: center;
     width: 100vw;
   }
+  .container_c1 {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    height: 75px;
+    width: 100vw;
+    
+  }
   
+  .container_c2 {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    height: 75px;
+    
+    
+  }
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    font-size: 24px;
+    height: 75px;
+    
+    
+  }
+  
+  .quantityContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    gap: 20%;
+    font-size: 24px;
+    height: 75px;
+    
+  }  
 }
 
-.container_c1 {
-  display: flex;
-  flex-direction: row;
-  align-items:center;
-  justify-content: center;
-  height: 75px;
-  width: 100vw;
-  
-}
-
-.container_c2 {
-  display: flex;
-  flex-direction: row;
-  align-items:center;
-  justify-content: center;
-  height: 75px;
-  
-  
-}
-
-.buttonContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 20%;
-  font-size: 24px;
-  height: 75px;
-  
-  
-}
-
-.quantityContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-between;
-  gap: 20%;
-  font-size: 24px;
-  height: 75px;
-  
-}
