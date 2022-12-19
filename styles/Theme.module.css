@@ -188,12 +188,11 @@
 }
 
 .container_c {
-  display: flex;
+ display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items: center;
   justify-content: center;
-  width : 280px;
-  max-width: 100%;
+  gap: 10%;
   height: 75px;
   background-color:black;
 }
@@ -203,10 +202,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20%;
-  font-size: 24px;
-  width : 280px;
-  max-width: 100%;
+  gap: 10%;
   height: 75px;
   background-color:black;
 }
