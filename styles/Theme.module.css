@@ -185,6 +185,7 @@
   align-items: center;
   justify-content: center;
   width:700px
+  background-color:black;
   
 }
 
@@ -194,7 +195,8 @@
   align-items:left;
   justify-content: left;
   height: 75px;
-  background-color:black;
+  width:300px
+  
 }
 
 .container_c2 {
@@ -203,7 +205,7 @@
   align-items:center;
   justify-content: center;
   height: 75px;
-  background-color:black;
+  
 }
 
 .buttonContainer {
@@ -214,7 +216,7 @@
   gap: 20%;
   font-size: 24px;
   height: 75px;
-  background-color:black;
+  
 }
 
 .quantityContainer {
@@ -225,7 +227,8 @@
   gap: 20%;
   font-size: 24px;
   height: 75px;
-  background-color:black;
+  width:700px
+  
 }
 /* On mobile, make the .mintInfoContainer stack vertically */
 @media screen and (max-width: 450px) {
