@@ -65,10 +65,10 @@ const Home: NextPage = () => {
 
       <div className={styles.container_a}>
         <div className={styles.container_b}>
-          <div className={styles.container_c}>
+          <div className={styles.container_c1}>
           <h3>Price: Free + Gas Fee </h3>
               </div>
-          <div className={styles.container_c}>
+          <div className={styles.buttonContainer}>
           <Web3Button
                     contractAddress={myNftDropContractAddress}
                     action={async (contract) =>
@@ -102,7 +102,7 @@ const Home: NextPage = () => {
         </div>    
 
         <div className={styles.container_b}>
-          <div className={styles.container_c}>
+          <div className={styles.container_c2}>
           {claimedSupply && unclaimedSupply ? (
                 <h3>
                   {/* Claimed supply so far */}

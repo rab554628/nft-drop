@@ -188,11 +188,31 @@
   
 }
 
-.container_c {
+.container_c1 {
   display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items:left;
   justify-content: center;
+  height: 75px;
+  background-color:black;
+}
+
+.container_c2 {
+  display: flex;
+  flex-direction: row;
+  align-items:right;
+  justify-content: center;
+  height: 75px;
+  background-color:black;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+  font-size: 24px;
   height: 75px;
   background-color:black;
 }
