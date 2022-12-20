@@ -167,8 +167,9 @@
 }
 
 .image {
-  height: 100px;
+  height: 100%;
   border-radius: 16px;
+  margin-bottom: 50px;
 }
 
 .container_a {
