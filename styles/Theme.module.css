@@ -168,6 +168,7 @@
 
 .image {
   width:100vw;
+  max-width: 500px;
   border-radius: 0px;
   margin-bottom: 40px;
 }
@@ -184,17 +185,13 @@
   display: flex;
   flex-direction: column;
   align-items:flex-start;
-  justify-content:flex-start;
   width:50vw;
-  background-color: blue;
 }
 .container_b_r {
   display: flex;
   flex-direction: column;
   align-items:flex-end;
-  justify-content:flex-end;
   width:50vw;
-  background-color:antiquewhite;
 
 }
 
@@ -205,28 +202,6 @@
   justify-content: center;
   height: 75px;
   width:200px; 
-  background-color: aquamarine;
-}
-
-.container_c_r {
-  display: flex;
-  flex-direction: row;
-  align-items:center;
-  justify-content: center;
-  height: 75px;
-  width:40vw;
-}
-
-.buttonContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 20%;
-  font-size: 24px;
-  height: 75px;
-  width:60vw;
-  
 }
 
 .quantityContainer {
@@ -238,8 +213,8 @@
   font-size: 24px;
   height: 75px;
   width:200px;  
-  background-color: aquamarine;
 }
+
 /* On mobile, make the .mintInfoContainer stack vertically */
 @media screen and (max-width: 450px) {
 
@@ -251,7 +226,28 @@
     width: 100vw;
   }
 
-  .container_c1 {
+  .image {
+    width:100vw;
+    max-width: 350px;
+    border-radius: 0px;
+    margin-bottom: 40px;
+  }
+
+  .container_b_l {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:50vw;
+  }
+  .container_b_r {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:50vw;
+  
+  }
+
+  .container_c {
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -259,26 +255,7 @@
     height: 75px;
     width: 100vw;
   }
-  
-  .container_c2 {
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: center;
-    height: 75px;
-    width: 100vw;
-  }
-  
-  .buttonContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20%;
-    font-size: 24px;
-    height: 75px;
-    width: 100vw;
-  }
+
   
   .quantityContainer {
     display: flex;
