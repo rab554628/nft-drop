@@ -180,26 +180,31 @@
   width: 100vw;
 }
 
-.container_b {
+.container_b_l {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content:flex-start;
   width:100vw;
-  
-  
+}
+.container_b_r {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-end;
+  width:100vw;
 }
 
-.container_c1 {
+.container_c {
   display: flex;
   flex-direction: row;
   align-items:center;
   justify-content: center;
   height: 75px;
-  width:60vw; 
+  width:280px; 
 }
 
-.container_c2 {
+.container_c_r {
   display: flex;
   flex-direction: row;
   align-items:center;
@@ -228,7 +233,7 @@
   gap: 20%;
   font-size: 24px;
   height: 75px;
-  width:40vw;  
+  width:280px;  
 }
 /* On mobile, make the .mintInfoContainer stack vertically */
 @media screen and (max-width: 450px) {
