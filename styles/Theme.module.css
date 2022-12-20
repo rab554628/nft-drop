@@ -184,15 +184,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:left;
+  align-content: flex-start;
   width:50vw;
+  background-color: blue;
 }
 .container_b_r {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:righ;
+  align-content: flex-end;
   width:50vw;
+  background-color: blue;
+
 }
 
 .container_c {
