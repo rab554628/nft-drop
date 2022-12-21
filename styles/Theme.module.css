@@ -127,8 +127,8 @@
 
 .quantityControlButton {
   cursor: pointer;
-  width: 42px;
-  height: 42px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   font-size: 3rem;
   background-color: transparent;
