@@ -260,5 +260,17 @@
     height: 75px;
     width: 100vw;
   }  
+
+  .quantityControlButton {
+    cursor: pointer;
+    width:42px;
+    height: 42px;
+    border-radius: 0%;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 0px solid white;
+    color: white; 
+    padding: 10px 
+    }
 }
 
