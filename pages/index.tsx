@@ -125,7 +125,7 @@ const Home: NextPage = () => {
                     onClick={() => setQuantity(quantity - 1)}
                     disabled={quantity <= 1}
                   >
-                    -
+                    <h4>-</h4>
                   </button>
 
                   <h4>{quantity}</h4>
@@ -140,7 +140,7 @@ const Home: NextPage = () => {
                       )
                     }
                   >
-                    +
+                    <h4>+</h4>
                   </button>
           </div>
         </div>    
