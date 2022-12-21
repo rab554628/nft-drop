@@ -126,10 +126,13 @@
 }
 
 .quantityControlButton {
+  align-items:center;
+  justify-content: center;
   cursor: pointer;
-  width:42px;
-  height: 42px;
+  width:62px;
+  height: 62px;
   border-radius: 0%;
+  padding:10px;
   font-size: 1rem;
   background-color: transparent;
   border: 0px solid white;
@@ -256,21 +259,10 @@
     flex-direction: row;
     align-items: center;
     justify-content:center;
-    gap: 10%;
+    gap: 5%;
     height: 75px;
     width: 100vw;
+    background-color: aqua;
   }  
-
-  .quantityControlButton {
-    cursor: pointer;
-    width:62px;
-    height: 62px;
-    border-radius: 0%;
-    font-size: 1rem;
-    background-color: transparent;
-    border: 0px solid white;
-    color: white; 
-    padding: 10px 
-    }
 }
 
