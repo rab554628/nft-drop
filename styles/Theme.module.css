@@ -260,7 +260,6 @@
     width: 100vw;
   }
 
-  
   .quantityContainer {
     display: flex;
     flex-direction: row;
@@ -270,5 +269,18 @@
     height: 75px;
     width: 100vw;
   }  
+
+  .quantityControlButton {
+    align-items: center;
+    justify-content:center;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 1rem;
+    background-color:gray;
+    border: 0px solid grey;
+    color: #fff;
+  }
 }
 
