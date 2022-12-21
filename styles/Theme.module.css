@@ -135,15 +135,12 @@
   border-radius: 100%;
   font-size: 2rem;
   background-color: transparent;
-  border: 2px solid grey;
   color: #fff;
 }
 
 .quantityControlButton:disabled {
   opacity: 0.25;
 }
-
-
 
 .mintContainer {
   display: flex;
@@ -214,7 +211,7 @@
   font-size: 24px;
   height: 75px;
   width:200px;  
-  margin-top: -3px;
+  padding-top: -2px;
 }
 
 /* On mobile, make the .mintInfoContainer stack vertically */
