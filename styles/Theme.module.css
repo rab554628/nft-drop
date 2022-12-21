@@ -125,6 +125,19 @@
   font-size: 1rem;
 }
 
+.quantityControlButton {
+  cursor: pointer;
+  width:52px;
+  height: 52px;
+  padding:5px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: gray;
+  border: 2px solid gray;
+  color: white;  
+  }
+
 .quantityControlButton:disabled {
   opacity: 0.25;
 }
@@ -164,7 +177,6 @@
   justify-content: center;
   width: 100vw;
   max-width: 800px;
-  padding: 5px;
 }
 
 .container_b_l {
@@ -193,24 +205,11 @@
 .quantityContainer {
   display: flex;
   flex-direction: row;
-  align-items:center;
-  justify-content:space-around;
+  align-items: center;
+  justify-content:space-between;
   height: 75px;
   width:200px;
 }
-
-.quantityControlButton {
-  cursor: pointer;
-  width:52px;
-  height: 52px;
-  border-radius: 0%;
-  padding:5px;
-  font-size: 1rem;
-  background-color: transparent;
-  border: 0px solid white;
-  color: white;  
-  z-index: 3;
-  }
 
 /* On mobile, make the .mintInfoContainer stack vertically */
 @media screen and (max-width: 450px) {
@@ -258,10 +257,9 @@
     flex-direction: row;
     align-items: center;
     justify-content:center;
-    gap: 5%;
+    gap: 20%;
     height: 75px;
     width: 100vw;
-    background-color: aqua;
   }  
 }
 

@@ -125,10 +125,7 @@ const Home: NextPage = () => {
                     onClick={() => setQuantity(quantity - 1)}
                     disabled={quantity <= 1}
                   >
-                    <img
-                        className={styles.quantityControlButton}
-                        src={"../down.jpg"}
-                    />
+                    -
                   </button>
 
                   <h4>{quantity}</h4>
@@ -143,10 +140,7 @@ const Home: NextPage = () => {
                       )
                     }
                   >
-                    <img
-                        className={styles.quantityControlButton}
-                        src={"../up.jpg"}
-                    />
+                    +
                   </button>
           </div>
         </div>    
