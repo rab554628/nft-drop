@@ -129,16 +129,14 @@
 }
 
 .quantityControlButton {
+  align-items: center;
+  justify-content:center;
   cursor: pointer;
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  font-size: 2rem;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color:transparent;
-  border: 0px solid grey;
+  font-size: 1rem;
+  background-color:gray;
   color: #fff;
 }
 
@@ -269,18 +267,5 @@
     height: 75px;
     width: 100vw;
   }  
-
-  .quantityControlButton {
-    align-items: center;
-    justify-content:center;
-    cursor: pointer;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    font-size: 1rem;
-    background-color:gray;
-    border: 0px solid grey;
-    color: #fff;
-  }
 }
 
