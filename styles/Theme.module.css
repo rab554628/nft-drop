@@ -127,14 +127,13 @@
 
 .quantityControlButton {
   cursor: pointer;
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  border: 1px solid gray; 
-  color:red; 
   font-size: 2rem;
-  font-weight: 600;
-  background-color:transparent;
+  background-color: transparent;
+  border: 0px solid grey;
+  color: #fff;
   }
 
 .quantityControlButton:disabled {
