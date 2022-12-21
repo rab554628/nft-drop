@@ -132,7 +132,7 @@
   cursor: pointer;
   width: 42px;
   height: 42px;
-  border-radius: 100%;
+  border-radius: 0%;
   font-size: 2rem;
   background-color: grey;
   border: 0px solid grey;
