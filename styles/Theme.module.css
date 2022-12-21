@@ -114,9 +114,6 @@
 }
 
 
-
-
-
 .textInput {
   width: 48px;
   background-color: transparent;
@@ -133,10 +130,10 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid red; 
+  border: 1px solid gray; 
   color:red; 
-  background-color:whitesmoke;
-  font:1rem;
+  background-color:transparent;
+  font:24px;
   }
 
 .quantityControlButton:disabled {
