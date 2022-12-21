@@ -129,17 +129,8 @@
 }
 
 .quantityControlButton {
-    align-items: center;
-    justify-content:center;
-    cursor: pointer;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    font-size: 1rem;
-    background-color:transparent;
-    border: 0px solid grey;
-    color:white;
-    
+     color:white;
+    font-size: 2rem; 
   }
 
 .quantityControlButton:disabled {
@@ -213,7 +204,6 @@
   flex-direction: row;
   align-items: center;
   justify-content:space-between;
-  gap: 20%;
   height: 75px;
   width:200px;
 }
