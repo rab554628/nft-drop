@@ -132,7 +132,7 @@
   cursor: pointer;
   width: 42px;
   height: 42px;
-  border-radius: 50%;
+  border-radius: 100%;
   font-size: 2rem;
   background-color: transparent;
   border: 2px solid grey;
@@ -214,6 +214,7 @@
   font-size: 24px;
   height: 75px;
   width:200px;  
+  margin-top: -3px;
 }
 
 /* On mobile, make the .mintInfoContainer stack vertically */
