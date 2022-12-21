@@ -133,7 +133,7 @@
   border: 1px solid gray; 
   color:red; 
   background-color:transparent;
-  font:24px;
+  font: 2em;
   }
 
 .quantityControlButton:disabled {
