@@ -134,6 +134,7 @@
   height: 42px;
   border-radius: 50%;
   font-size: 2rem;
+  align-items: center;
   justify-content: center;
   background-color: grey;
   border: 0px solid grey;
