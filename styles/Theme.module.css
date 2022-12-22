@@ -125,7 +125,7 @@
   font-size: 1rem;
 }
 
-.quantityControlButton {
+.quantityControlButton1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,9 +140,29 @@
   color: white;  
   }
 
-.quantityControlButton:disabled {
+.quantityControlButton1:disabled {
   opacity: 0.25;
 }
+
+.quantityControlButton2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width:42px;
+  height: 42px;
+  padding: 1px;
+  border-radius: 50%;
+  font-size: 2.2rem;
+    background-color: gray;
+  border: 2px solid gray;
+  color: white;  
+  }
+
+.quantityControlButton2:disabled {
+  opacity: 0.25;
+}
+
 
 .mintContainer {
   display: flex;

@@ -121,7 +121,7 @@ const Home: NextPage = () => {
               </div>
           <div className={styles.quantityContainer}>
           <button
-                    className={`${styles.quantityControlButton}`}
+                    className={`${styles.quantityControlButton1}`}
                     onClick={() => setQuantity(quantity - 1)}
                     disabled={quantity <= 1}
                   >
@@ -131,7 +131,7 @@ const Home: NextPage = () => {
                   <h4>{quantity}</h4>
 
                   <button
-                    className={`${styles.quantityControlButton}`}
+                    className={`${styles.quantityControlButton2}`}
                     onClick={() => setQuantity(quantity + 1)}
                     disabled={
                       quantity >=
