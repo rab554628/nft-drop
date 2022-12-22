@@ -126,12 +126,15 @@
 }
 
 .quantityControlButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width:42px;
   height: 42px;
-  padding:2px;
+  padding: 8px 10px 12px 10px;
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
   background-color: gray;
   border: 2px solid gray;
