@@ -125,22 +125,6 @@
   font-size: 1rem;
 }
 
-.quantityControlButton {
-  cursor: pointer;
-  width:42px;
-  height: 42px;
-  border-radius: 50%;
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;  
-  }
-
-.quantityControlButton:disabled {
-  opacity: 0.25;
-}
-
 .mintContainer {
   display: flex;
   flex-direction: row;
@@ -175,7 +159,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  max-width: 800px;
+  max-width: 700px;
   padding: 5px;
 }
 
@@ -209,6 +193,25 @@
   justify-content:space-between;
   height: 75px;
   width:200px;
+}
+
+.quantityControlButton {
+  display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+  cursor: pointer;
+  width:42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;  
+  }
+
+.quantityControlButton:disabled {
+  opacity: 0.25;
 }
 
 /* On mobile, make the .mintInfoContainer stack vertically */
