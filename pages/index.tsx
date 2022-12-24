@@ -12,7 +12,7 @@ import { useState } from "react";
 import styles from "../styles/Theme.module.css";
 
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = "0xCA7a39E47fF363576306D55d73B802034e2A169A";
+const myNftDropContractAddress = "0xD22Fb2D091CD6Ef4dC0709F525FDE2cd2316Aaa3";
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
                     onClick={() => setQuantity(quantity - 1)}
                     disabled={quantity <= 1}
                   >
-                    -
+                    &#9660;
                   </button>
 
                   <h4>{quantity}</h4>
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
                       )
                     }
                   >
-                    +
+                    &#9650;
                   </button>
                 </div>
 
@@ -118,7 +118,7 @@ const Home: NextPage = () => {
                     }
                     // If the function fails, we can do something here.
                     onError={(error) => alert(error?.message)}
-                    accentColor="#C8A2C8"
+                    accentColor="#A9AFE1"
                     colorMode="dark"
                   >
                     {`Mint${quantity > 1 ? ` ${quantity}` : ""}${
