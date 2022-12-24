@@ -197,15 +197,15 @@
 
 .quantityControlButton {
   display:flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   width:50px;
   height: 50px;
   border-radius: 50%;
-  font-size: 1.0rem;
+  font-size: 1.5rem;
   background-color: transparent;
-  border: 2px solid white;
+  border: 0px solid white;
   color: white;  
   }
 
