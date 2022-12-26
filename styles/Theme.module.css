@@ -129,7 +129,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-around;
+  justify-content:center;
+  gap:10%
 }
 
 .mintContainer {
@@ -162,7 +163,7 @@
   border-radius: 50%;
   font-size: 2rem;
   background-color: transparent;
-  border: 1px solid grey;
+  border: 0px solid grey;
   color: #fff;
 }
 
