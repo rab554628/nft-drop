@@ -113,7 +113,7 @@ const Home: NextPage = () => {
                       alert(
                         `Successfully minted ${result.length} NFT${
                           result.length > 1 ? "s" : ""
-                        }!`a
+                        }!`
                       )
                     }
                     // If the function fails, we can do something here.
