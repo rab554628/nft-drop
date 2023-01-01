@@ -113,12 +113,12 @@ const Home: NextPage = () => {
                       alert(
                         `Successfully minted ${result.length} NFT${
                           result.length > 1 ? "s" : ""
-                        }!`
+                        }!`a
                       )
                     }
                     // If the function fails, we can do something here.
                     onError={(error) => alert(error?.message)}
-                    accentColor="#FBE84C"
+                    accentColor="#7040F2"
                     colorMode="dark"
                   >
                     {`Mint${quantity > 1 ? ` ${quantity}` : ""}${
