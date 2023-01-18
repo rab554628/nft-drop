@@ -66,7 +66,7 @@ const Home: NextPage = () => {
       <div className={styles.container_a}>
         <div className={styles.container_b_l}>
           <div className={styles.container_c}>
-          <h3>Price: Free + Gas Fee </h3>
+          <h3>On Ethereum </h3>
               </div>
           <div className={styles.container_c}>
           <Web3Button
