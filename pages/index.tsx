@@ -54,56 +54,22 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.mintInfoContainer}>
-        <div className={styles.imageSide}>
-          {/* Image Preview of NFTs */}
-          <img
+      <div className={styles.container_a}>
+        {/* Image Preview of NFTs */}
+        <img
             className={styles.image}
             src={"../png1.png"}
             alt={`${contractMetadata?.name} preview image`}
           />
-          
-          {/* Show claim button or connect wallet button */}
-          {
-            // Sold out or show the claim button
-            isSoldOut ? (
-              <div>
-                <h2>Sold Out</h2>
+      </div>
+
+      <div className={styles.container_a}>
+        <div className={styles.container_b_l}>
+          <div className={styles.container_c}>
+          <h3>On Ethereum </h3>
               </div>
-            ) : isNotReady ? (
-              <div>
-                <h2>Not ready to be minted yet</h2>
-              </div>
-            ) : (
-              <>
-                
-                <div className={styles.quantityContainer}>
-                  <button
-                    className={`${styles.quantityControlButton}`}
-                    onClick={() => setQuantity(quantity - 1)}
-                    disabled={quantity <= 1}
-                  >
-                    &#9660;
-                  </button>
-
-                  <h4>{quantity}</h4>
-
-                  <button
-                    className={`${styles.quantityControlButton}`}
-                    onClick={() => setQuantity(quantity + 1)}
-                    disabled={
-                      quantity >=
-                      parseInt(
-                        activeClaimCondition?.maxClaimablePerWallet || "0"
-                      )
-                    }
-                  >
-                    &#9650;
-                  </button>
-                </div>
-
-                <div className={styles.mintContainer}>
-                  <Web3Button
+          <div className={styles.container_c}>
+          <Web3Button
                     contractAddress={myNftDropContractAddress}
                     action={async (contract) =>
                       await contract.erc721.claim(quantity)
@@ -132,15 +98,13 @@ const Home: NextPage = () => {
                         : ""
                     }`}
                   </Web3Button>
-                </div>
-              </>
-            )
-          }
-          {/* Amount claimed so far */}
-          <div className={styles.mintCompletionArea}>
-            
-              {claimedSupply && unclaimedSupply ? (
-                <p>
+          </div>
+        </div>    
+
+        <div className={styles.container_b_r}>
+          <div className={styles.container_c}>
+          {claimedSupply && unclaimedSupply ? (
+                <h3>
                   {/* Claimed supply so far */}
                   <b>{claimedSupply?.toNumber()}</b>
                   {" / "}
@@ -149,20 +113,46 @@ const Home: NextPage = () => {
                     claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
                   }
                   {" Minted."}
-                </p>
+                </h3>
               ) : (
                 // Show loading state if we're still loading the supply
                 <p>Loading...</p>
-              )}
-            {/*
-             <div className={styles.mintAreaLeft}>
-              <p>Minted</p>
-            </div>
-            <div className={styles.mintAreaRight}>
-            </div>*/}
+              )} 
+              </div>
+          <div className={styles.quantityContainer}>
+          <button
+                    className={`${styles.quantityControlButton}`}
+                    onClick={() => setQuantity(quantity - 1)}
+                    disabled={quantity <= 1}
+                  >
+                    -
+                  </button>
+
+                  <h4>{quantity}</h4>
+
+                  <button
+                    className={`${styles.quantityControlButton}`}
+                    onClick={() => setQuantity(quantity + 1)}
+                    disabled={
+                      quantity >=
+                      parseInt(
+                        activeClaimCondition?.maxClaimablePerWallet || "0"
+                      )
+                    }
+                  >
+                    +
+                  </button>
           </div>
-        </div>
+        </div>    
+
+
       </div>
+
+
+
+
+      
+      
       
     </div>
   );
