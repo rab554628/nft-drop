@@ -59,7 +59,7 @@ const Home: NextPage = () => {
           {/* Image Preview of NFTs */}
           <img
             className={styles.image}
-            src={contractMetadata?.image}
+            src={"../png1.png"}
             alt={`${contractMetadata?.name} preview image`}
           />
           
@@ -118,7 +118,7 @@ const Home: NextPage = () => {
                     }
                     // If the function fails, we can do something here.
                     onError={(error) => alert(error?.message)}
-                    accentColor="#F56020"
+                    accentColor="#fca032"
                     colorMode="dark"
                   >
                     {`Mint${quantity > 1 ? ` ${quantity}` : ""}${
