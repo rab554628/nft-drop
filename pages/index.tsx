@@ -59,7 +59,7 @@ const Home: NextPage = () => {
           {/* Image Preview of NFTs */}
           <img
             className={styles.image}
-            src={"../png1.png"}
+            src={contractMetadata?.image}
             alt={`${contractMetadata?.name} preview image`}
           />
           
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
                     onClick={() => setQuantity(quantity - 1)}
                     disabled={quantity <= 1}
                   >
-                    -
+                    &#9660;
                   </button>
 
                   <h4>{quantity}</h4>
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
                       )
                     }
                   >
-                    +
+                    &#9650;
                   </button>
                 </div>
 
