@@ -142,6 +142,7 @@
   justify-content: center;
   gap: 10%;
   margin-top: 24px;
+  color: #ffffff;
 }
 
 .textInput {
@@ -163,7 +164,7 @@
   font-size: 2rem;
   background-color: transparent;
   border: 0px solid grey;
-  color: #fff;
+  color: #000000;
 }
 
 .quantityControlButton:disabled {

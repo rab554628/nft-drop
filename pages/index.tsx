@@ -118,7 +118,7 @@ const Home: NextPage = () => {
                     }
                     // If the function fails, we can do something here.
                     onError={(error) => alert(error?.message)}
-                    accentColor="#FFFFFF"
+                    accentColor="#000000"
                     colorMode="dark"
                   >
                     {`Mint${quantity > 1 ? ` ${quantity}` : ""}${
