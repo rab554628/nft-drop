@@ -9,7 +9,7 @@ const activeChainId = 1;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider activeChain={activeChain}>
+    <ThirdwebProvider activeChain={activeChainId}>
       <Head>
         <title>XTY World</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
