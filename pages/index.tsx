@@ -291,6 +291,7 @@ const Home: NextPage = () => {
                   <div className={styles.mintContainer}>
                 
                       <Web3Button
+                      accentColor="#8348FF"
                         contractAddress={nftDrop?.getAddress() || ""}
                         action={(cntr) => cntr.erc721.claim(quantity)}
                         isDisabled={!canClaim || buttonLoading}
