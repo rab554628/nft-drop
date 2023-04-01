@@ -253,7 +253,7 @@ const Home: NextPage = () => {
                   </div>*/}
               </div>
 
-              {claimConditions.data?.length === 0 ||
+              {/*{claimConditions.data?.length === 0 ||
               claimConditions.data?.every(
                 (cc) => cc.maxClaimableSupply === "0"
               ) ? (
@@ -268,9 +268,9 @@ const Home: NextPage = () => {
                   <h2>Drop starts in:</h2>
                   <Timer date={claimConditions.data[0].startTime} />
                 </div>
-              ) : (
+              ) : (*/}
                 <>
-                  <p>Quantity</p>
+                  <p></p>
                   <div className={styles.quantityContainer}>
                     <button
                       className={`${styles.quantityControlButton}`}
@@ -314,7 +314,7 @@ const Home: NextPage = () => {
                     )}
                   </div>
                 </>
-              )}
+             {/* )}*/}
             </div>
           </>
         )}
