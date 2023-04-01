@@ -59,31 +59,8 @@
 }
 
 .mainButton {
-  cursor: pointer;
-  display: inline-flex;
-  appearance: none;
-  align-items: center;
-  -webkit-box-align: center;
-  justify-content: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  line-height: 1.2;
-  font-weight: 600;
-  transition-property: background-color, border-color, color, fill, stroke,
-    opacity, box-shadow, transform;
-  transition-duration: 200ms;
-  height: 3rem;
-  min-width: 3rem;
-  font-size: 1rem;
   background: #4949aa;
-  
   color: #c54848;
-  padding: 20px;
-  text-align: center;
-  border-radius: 9999px;
-  border-style: none;
 }
 
 .mainButton:hover {
