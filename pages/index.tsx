@@ -304,6 +304,8 @@ const Home: NextPage = () => {
                           setQuantity(1);
                           alert("Successfully claimed NFTs");
                         }}
+                        accentColor="#FFEE22"
+                        colorMode="dark"
                       >
                         {buttonLoading ? "Loading..." : buttonText}
                       </Web3Button>
