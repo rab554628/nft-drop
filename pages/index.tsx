@@ -20,7 +20,7 @@ import styles from "../styles/Theme.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
 
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = "0x63AbbA64AfDf903D81438076007899e3973ee994";
+const myNftDropContractAddress = "0x46020916b88F666AC15bc4600300bCa42E2AF195";
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);
@@ -236,11 +236,7 @@ const Home: NextPage = () => {
 
               {/* Amount claimed so far */}
               <div className={styles.mintCompletionArea}>
-                <div className={styles.mintAreaLeft}>
-                  <p>Total Minted</p>
-                </div>
-                <div className={styles.mintAreaRight}>
-                  {claimedSupply && unclaimedSupply ? (
+              {claimedSupply && unclaimedSupply ? (
                     <p>
                       <b>{numberClaimed}</b>
                       {" / "}
@@ -249,7 +245,12 @@ const Home: NextPage = () => {
                   ) : (
                     <p>Loading...</p>
                   )}
-                </div>
+
+              <p>Minted.</p>
+              {/*
+                <div className={styles.mintAreaLeft}></div>
+                <div className={styles.mintAreaRight}>          
+                  </div>*/}
               </div>
 
               {claimConditions.data?.length === 0 ||
@@ -279,8 +280,7 @@ const Home: NextPage = () => {
                       -
                     </button>
 
-                    <h4>{quantity}</h4>
-
+                  
                     <button
                       className={`${styles.quantityControlButton}`}
                       onClick={() => setQuantity(quantity + 1)}
