@@ -20,7 +20,7 @@ import styles from "../styles/Theme.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
 
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = "0xbC044bc063F4F88e9d52D833c200aE05Ea65FAF9";
+const myNftDropContractAddress = "0x468554bBE6d7620a62884E90E08173d66a5Ff4ec";
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);
@@ -319,17 +319,8 @@ const Home: NextPage = () => {
           </>
         )}
       </div>
-      {/* Powered by thirdweb */}{" "}
-      <Image
-        src="/logo.png"
-        alt="thirdweb Logo"
-        width={135}
-        height={22}
-        className={styles.buttonGapTop}
-        style={{
-          objectFit: "contain",
-        }}
-      />
+      
+     
     </div>
   );
 };
