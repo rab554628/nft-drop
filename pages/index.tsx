@@ -241,12 +241,12 @@ const Home: NextPage = () => {
                       <b>{numberClaimed}</b>
                       {" / "}
                       {numberTotal}
+                      {" Minted."}
+                      
                     </p>
                   ) : (
                     <p>Loading...</p>
                   )}
-
-              <p>Minted.</p>
               {/*
                 <div className={styles.mintAreaLeft}></div>
                 <div className={styles.mintAreaRight}>          
