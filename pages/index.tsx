@@ -291,11 +291,7 @@ const Home: NextPage = () => {
                   </div>
 
                   <div className={styles.mintContainer}>
-                    {isSoldOut ? (
-                      <div>
-                        <h2>Sold Out</h2>
-                      </div>
-                    ) : (
+                
                       <Web3Button
                         contractAddress={nftDrop?.getAddress() || ""}
                         action={(cntr) => cntr.erc721.claim(quantity)}
@@ -311,7 +307,7 @@ const Home: NextPage = () => {
                       >
                         {buttonLoading ? "Loading..." : buttonText}
                       </Web3Button>
-                    )}
+                    
                   </div>
                 </>
              {/* )}*/}
