@@ -20,7 +20,7 @@ import styles from "../styles/Theme.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
 
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = "0x468554bBE6d7620a62884E90E08173d66a5Ff4ec";
+const myNftDropContractAddress = "0x63AbbA64AfDf903D81438076007899e3973ee994";
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);
@@ -213,114 +213,115 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.mintInfoContainer}>
-        {isLoading ? (
-          <p>Loading...</p>
-        ) : (
-          <>
-            <div className={styles.infoSide}>
-              {/* Title of your NFT Collection */}
-              <h1>{contractMetadata?.name}</h1>
-              {/* Description of your NFT Collection */}
-              <p className={styles.description}>
-                {contractMetadata?.description}
-              </p>
-            </div>
-
-            <div className={styles.imageSide}>
-              {/* Image Preview of NFTs */}
-              <MediaRenderer
-                className={styles.image}
-                src={contractMetadata?.image}
-                alt={`${contractMetadata?.name} preview image`}
-              />
-
-              {/* Amount claimed so far */}
-              <div className={styles.mintCompletionArea}>
-                <div className={styles.mintAreaLeft}>
-                  <p>Total Minted</p>
-                </div>
-                <div className={styles.mintAreaRight}>
-                  {claimedSupply && unclaimedSupply ? (
-                    <p>
-                      <b>{numberClaimed}</b>
-                      {" / "}
-                      {numberTotal}
-                    </p>
-                  ) : (
-                    <p>Loading...</p>
-                  )}
-                </div>
+        <div className={styles.imageSide}>
+          {/* Image Preview of NFTs */}
+          <img
+            className={styles.image}
+            src={contractMetadata?.image}
+            alt={`${contractMetadata?.name} preview image`}
+          />
+          
+          {/* Show claim button or connect wallet button */}
+          {
+            // Sold out or show the claim button
+            isSoldOut ? (
+              <div>
+                <h2>Sold Out</h2>
               </div>
+            ) : isNotReady ? (
+              <div>
+                <h2>Not ready to be minted yet</h2>
+              </div>
+            ) : (
+              <>
+                
+                <div className={styles.quantityContainer}>
+                  <button
+                    className={`${styles.quantityControlButton}`}
+                    onClick={() => setQuantity(quantity - 1)}
+                    disabled={quantity <= 1}
+                  >
+                    &#9660;
+                  </button>
 
-              {claimConditions.data?.length === 0 ||
-              claimConditions.data?.every(
-                (cc) => cc.maxClaimableSupply === "0"
-              ) ? (
-                <div>
-                  <h2>
-                    This drop is not ready to be minted yet. (No claim condition
-                    set)
-                  </h2>
+                  <h4>{quantity}</h4>
+
+                  <button
+                    className={`${styles.quantityControlButton}`}
+                    onClick={() => setQuantity(quantity + 1)}
+                    disabled={
+                      quantity >=
+                      parseInt(
+                        activeClaimCondition?.maxClaimablePerWallet || "0"
+                      )
+                    }
+                  >
+                    &#9650;
+                  </button>
                 </div>
-              ) : !activeClaimCondition.data && claimConditions.data ? (
-                <div>
-                  <h2>Drop starts in:</h2>
-                  <Timer date={claimConditions.data[0].startTime} />
+
+                <div className={styles.mintContainer}>
+                  <Web3Button
+                    contractAddress={myNftDropContractAddress}
+                    action={async (contract) =>
+                      await contract.erc721.claim(quantity)
+                    }
+                    // If the function is successful, we can do something here.
+                    onSuccess={(result) =>
+                      alert(
+                        `Successfully minted ${result.length} NFT${
+                          result.length > 1 ? "s" : ""
+                        }!`
+                      )
+                    }
+                    // If the function fails, we can do something here.
+                    onError={(error) => alert(error?.message)}
+                    accentColor="#FFEE22"
+                    colorMode="dark"
+                  >
+                    {`Mint${quantity > 1 ? ` ${quantity}` : ""}${
+                      activeClaimCondition?.price.eq(0)
+                        ? " (Free)"
+                        : activeClaimCondition?.currencyMetadata.displayValue
+                        ? ` (${formatUnits(
+                            priceToMint,
+                            activeClaimCondition.currencyMetadata.decimals
+                          )} ${activeClaimCondition?.currencyMetadata.symbol})`
+                        : ""
+                    }`}
+                  </Web3Button>
                 </div>
+              </>
+            )
+          }
+          {/* Amount claimed so far */}
+          <div className={styles.mintCompletionArea}>
+            
+              {claimedSupply && unclaimedSupply ? (
+                <p>
+                  {/* Claimed supply so far */}
+                  <b>{claimedSupply?.toNumber()}</b>
+                  {" / "}
+                  {
+                    // Add unclaimed and claimed supply to get the total supply
+                    claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
+                  }
+                  {" Minted."}
+                </p>
               ) : (
-                <>
-                  <p>Quantity</p>
-                  <div className={styles.quantityContainer}>
-                    <button
-                      className={`${styles.quantityControlButton}`}
-                      onClick={() => setQuantity(quantity - 1)}
-                      disabled={quantity <= 1}
-                    >
-                      -
-                    </button>
-
-                    <h4>{quantity}</h4>
-
-                    <button
-                      className={`${styles.quantityControlButton}`}
-                      onClick={() => setQuantity(quantity + 1)}
-                      disabled={quantity >= maxClaimable}
-                    >
-                      +
-                    </button>
-                  </div>
-
-                  <div className={styles.mintContainer}>
-                    {isSoldOut ? (
-                      <div>
-                        <h2>Sold Out</h2>
-                      </div>
-                    ) : (
-                      <Web3Button
-                        contractAddress={nftDrop?.getAddress() || ""}
-                        action={(cntr) => cntr.erc721.claim(quantity)}
-                        isDisabled={!canClaim || buttonLoading}
-                        onError={(err) => {
-                          console.error(err);
-                          alert("Error claiming NFTs");
-                        }}
-                        onSuccess={() => {
-                          setQuantity(1);
-                          alert("Successfully claimed NFTs");
-                        }}
-                      >
-                        {buttonLoading ? "Loading..." : buttonText}
-                      </Web3Button>
-                    )}
-                  </div>
-                </>
+                // Show loading state if we're still loading the supply
+                <p>Loading...</p>
               )}
+            {/*
+             <div className={styles.mintAreaLeft}>
+              <p>Minted</p>
             </div>
-          </>
-        )}
+            <div className={styles.mintAreaRight}>
+            </div>*/}
+          </div>
+        </div>
       </div>
       
-     
     </div>
   );
 };
