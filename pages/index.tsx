@@ -304,7 +304,7 @@ const Home: NextPage = () => {
                           setQuantity(1);
                           alert("Successfully claimed NFTs");
                         }}
-                        
+                        className="mainButton"
                       >
                         {buttonLoading ? "Loading..." : buttonText}
                       </Web3Button>
