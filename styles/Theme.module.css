@@ -59,8 +59,8 @@
 }
 
 .mintContainer.mainButton {
-  background: #4949aa;
-  color: #c54848;
+  background-color: #4949aa !important;
+  color: #c54848 !important;
 }
 
 .mainButton:hover {
