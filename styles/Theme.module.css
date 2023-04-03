@@ -59,7 +59,7 @@
   margin: 12px 0;
 }
 
-.mintContainer.mainButton {
+.mintContainer button.mainButton {
   background-color: #4949aa !important;
   color: #c54848 !important;
 }

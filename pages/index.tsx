@@ -293,6 +293,7 @@ const Home: NextPage = () => {
                       <Web3Button
                       
                         contractAddress={nftDrop?.getAddress() || ""}
+                        className="styles.mainButton"
                         action={(cntr) => cntr.erc721.claim(quantity)}
                         isDisabled={!canClaim || buttonLoading}
                         onError={(err) => {
@@ -303,7 +304,7 @@ const Home: NextPage = () => {
                           setQuantity(1);
                           alert("Successfully claimed NFTs");
                         }}
-                        className="styles.mainButton"
+                        
                       >
                         {buttonLoading ? "Loading..." : buttonText}
                       </Web3Button>
