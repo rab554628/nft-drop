@@ -291,10 +291,9 @@ const Home: NextPage = () => {
                   <div className={styles.mintContainer}>
                 
                       <Web3Button
-                      
+                        className={styles.myWeb3ButtonClass}
                         contractAddress={nftDrop?.getAddress() || ""}
-                        className="styles.mainButton"
-                        action={(cntr) => cntr.erc721.claim(quantity)}
+                         action={(cntr) => cntr.erc721.claim(quantity)}
                         isDisabled={!canClaim || buttonLoading}
                         onError={(err) => {
                           console.error(err);

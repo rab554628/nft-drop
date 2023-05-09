@@ -68,6 +68,15 @@
   opacity: 0.8;
 }
 
+.myWeb3ButtonClass {
+  background-color: #4dc22a !important;
+}
+
+.foo > button {
+  background: #4dc22a !important;
+}
+
+
 .mintCompletionArea {
   display: flex;
   flex-direction: column;
