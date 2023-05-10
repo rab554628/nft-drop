@@ -68,14 +68,6 @@
   opacity: 0.8;
 }
 
-.myWeb3ButtonClass {
-  background-color: #4dc22a !important;
-}
-
-.foo > button {
-  background: #4dc22a !important;
-}
-
 
 .mintCompletionArea {
   display: flex;
@@ -174,6 +166,6 @@
   background-color: #c22ab5 !important;
 }
 
-.foo > button {
+.mintContainer > button {
   background: #c2ab2a !important;
 }
