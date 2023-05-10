@@ -169,3 +169,11 @@
     width: 100%;
   }
 }
+
+.myWeb3ButtonClass {
+  background-color: #c22ab5 !important;
+}
+
+.foo > button {
+  background: #c2ab2a !important;
+}
