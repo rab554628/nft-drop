@@ -228,7 +228,7 @@ const Home: NextPage = () => {
               {/* Image Preview of NFTs */}
               <MediaRenderer
                 className={styles.image}
-                src={"../4.png"}
+                src={"../png1.png"}
                 alt={`${contractMetadata?.name} preview image`}
               />
 
