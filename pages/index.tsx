@@ -20,7 +20,7 @@ import styles from "../styles/Theme.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
 
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = "0xAa8ab2479740Eaa9B5b87be243855B5002fe5a0A";
+const myNftDropContractAddress = "0x07d1832e4fA6eA1769e9357E599EE02879205139";
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);
@@ -228,7 +228,7 @@ const Home: NextPage = () => {
               {/* Image Preview of NFTs */}
               <MediaRenderer
                 className={styles.image}
-                src={"../png1.png"}
+                src={"../gif1.gif"}
                 alt={`${contractMetadata?.name} preview image`}
               />
 
