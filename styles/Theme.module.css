@@ -169,7 +169,6 @@
 .mintContainer > button {
   background: #FF4429 !important;
   color: #000000 !important;
-  width: 200px !important;
   min-height: 46px !important;
   border-radius: 24px !important;
   transition-duration: 0.4s !important;
