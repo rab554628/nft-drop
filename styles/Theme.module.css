@@ -168,7 +168,7 @@
 
 @font-face {
   font-family: myFont;
-  src: url("../Arista-Pro-Alternate-Bold-trial.ttf");
+  src: url("/Arista-Pro-Alternate-Bold-trial.ttf");
 }
 
 .mintContainer > button {
