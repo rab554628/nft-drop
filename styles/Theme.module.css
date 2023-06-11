@@ -176,8 +176,9 @@
 .mintContainer > button {
   font-family: 'Nunito', sans-serif !important;
   font-size: 18px !important;
+  text-transform: uppercase;
   background: #FF4429 !important;
-  color: #000000 !important;
+  color: #101010 !important;
   min-height: 56px !important;
   width: 180px;
   border-radius: 28px !important;
