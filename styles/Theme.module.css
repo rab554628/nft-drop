@@ -175,11 +175,12 @@
 
 .mintContainer > button {
   font-family: 'Nunito', sans-serif !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
   text-transform: uppercase;
   background: #FF4429 !important;
   color: #101010 !important;
   min-height: 56px !important;
+  width: 220px;
   border-radius: 28px !important;
   transition-duration: 0.4s !important;
   box-shadow: 0 8px 11px 0 rgba(207, 207, 207, 0.199), 0 6px 11px 0 rgba(0,0,0,0.19) !important;
