@@ -168,10 +168,9 @@
   background-color: #c22ab5 !important;
 }
 
-
 .mintContainer > button {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
   background: #FF4429 !important;
   color: #101010 !important;
