@@ -170,11 +170,11 @@
 
 @font-face {
   font-family: myFont;
-  src: url("/Arista-Pro-Alternate-Bold-trial.ttf");
+  src: url("/Nunito.ttf");
 }
 
 .mintContainer > button {
-  font-family: 'Nunito', sans-serif !important;
+  font-family: 'myFont', sans-serif !important;
   font-size: 16px !important;
   font-weight: 600;
   text-transform: uppercase;
