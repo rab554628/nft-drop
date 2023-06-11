@@ -71,6 +71,7 @@
 
 .mintCompletionArea {
   font-family: 'Nunito', sans-serif;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
