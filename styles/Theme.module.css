@@ -70,6 +70,7 @@
 
 
 .mintCompletionArea {
+  font-family: 'Nunito', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,7 +173,7 @@
 }
 
 .mintContainer > button {
-  font-family: myfont;
+  font-family: 'Nunito', sans-serif;
   background: #FF4429 !important;
   color: #000000 !important;
   min-height: 46px !important;
