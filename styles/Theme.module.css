@@ -166,7 +166,13 @@
   background-color: #c22ab5 !important;
 }
 
+@font-face {
+  font-family: myFont;
+  src: url("../Arista-Pro-Alternate-Bold-trial.ttf");
+}
+
 .mintContainer > button {
+  font-family: myfont;
   background: #FF4429 !important;
   color: #000000 !important;
   min-height: 46px !important;
