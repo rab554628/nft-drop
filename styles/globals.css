@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 /* Change the values in here to match your branding */
+
+@font-face {
+  font-family: myFont;
+  src: url("/Nunito.ttf");
+}
+
 :root {
   /* Background color of the page */
   --background-color: rgba(0, 0, 0, 0);
@@ -15,7 +21,7 @@
   --color-secondary: #ED4961  ;
 
   /* Which font you want to use */
-  --font: "Nunito", sans-serif;
+  --font: "myFont", sans-serif;
 
   /* Color of the border around items */
   --border-color: rgba(255, 255, 255, 0.5);
