@@ -174,8 +174,8 @@
 }
 
 .mintContainer > button {
-  /* font-family: 'Nunito', sans-serif !important;
-  text-transform: uppercase; */ 
+  font-family: 'Nunito', sans-serif !important;
+   /*text-transform: uppercase; */ 
   font-size: 16px;
   font-weight: 600;
   background: #FF4429 !important;
