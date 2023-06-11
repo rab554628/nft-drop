@@ -168,13 +168,8 @@
   background-color: #c22ab5 !important;
 }
 
-@font-face {
-  font-family: myFont;
-  src: url("/Nunito.ttf");
-}
-
 .mintContainer > button {
-  font-size: 16px !important;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   background: #FF4429 !important;
