@@ -167,6 +167,19 @@
 }
 
 .mintContainer > button {
-  background: #FFC107 !important;
-  color: #000000 !important;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #FF4429 !important;
+  color: #101010 !important;
+  min-height: 56px !important;
+  width: 210px;
+  border-radius: 28px !important;
+  transition-duration: 0.4s !important;
+  box-shadow: 0 8px 11px 0 rgba(207, 207, 207, 0.199), 0 6px 11px 0 rgba(0,0,0,0.19) !important;
+}
+
+.mintContainer > button:hover {
+  color: #ffffff !important;
+  background: #272727 !important;
 }
