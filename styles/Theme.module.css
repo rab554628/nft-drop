@@ -161,8 +161,14 @@
   }
 }
 
+@font-face {
+  font-family: myFont;
+  src: url("/Speeday.ttf");
+}
+
 .mintContainer > button {
   background-image: linear-gradient(to right, #CF8C3C 0%, #FE6244  100%);
+  font-family:"myfont", sans-serif;
   color: #ffffff ;
   min-height: 45px ;
   width: 280px;
