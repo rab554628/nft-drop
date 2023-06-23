@@ -46,7 +46,10 @@ const Home: NextPage = () => {
 
   const numberClaimed = useMemo(() => {
     return BigNumber.from(claimedSupply.data || 0).toString();
-  }, [claimedSupply-1]);
+  }, [claimedSupply]);
+  
+  const numberClaimedMinusOne = Number(numberClaimed) - 1;
+  
 
   const numberTotal = useMemo(() => {
     return BigNumber.from(claimedSupply.data || 0)
@@ -236,7 +239,7 @@ const Home: NextPage = () => {
               <div className={styles.mintCompletionArea}>
               {claimedSupply && unclaimedSupply ? (
                     <p>
-                      <b>{numberClaimed}</b>
+                      <b>{numberClaimedMinusOne}</b>
                       {" / "}
                       {numberTotal}
                       {" Minted."}
