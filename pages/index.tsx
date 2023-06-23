@@ -236,7 +236,7 @@ const Home: NextPage = () => {
               <div className={styles.mintCompletionArea}>
               {claimedSupply && unclaimedSupply ? (
                     <p>
-                      <b>{numberClaimed}-{10}</b>
+                      <b>{0}</b>
                       {" / "}
                       {numberTotal}
                       {""}
