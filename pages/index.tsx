@@ -46,7 +46,7 @@ const Home: NextPage = () => {
 
   const numberClaimed = useMemo(() => {
     return BigNumber.from(claimedSupply.data || 0).toString();
-  }, [claimedSupply]);
+  }, [claimedSupply]-1);
 
   const numberTotal = useMemo(() => {
     return BigNumber.from(claimedSupply.data || 0)
