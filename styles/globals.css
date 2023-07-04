@@ -20,8 +20,9 @@
   /* Secondary color of your brand */
   --color-secondary: #ED4961  ;
 
-  /* Which font you want to use */
-  --font: "myFont", sans-serif;
+  /* Which font you want to use 
+  --font: "myFont", sans-serif;*/
+  --font: Arial, Helvetica, sans-serif; 
 
   /* Color of the border around items */
   --border-color: rgba(255, 255, 255, 0.5);
