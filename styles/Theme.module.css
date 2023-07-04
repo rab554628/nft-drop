@@ -168,6 +168,7 @@
 
 .mintContainer > button {
   background: #C2AB2A ;
+  font-size: 22px;
   color: #000000 ;
   min-height: 65px ;
   width: 330px;
