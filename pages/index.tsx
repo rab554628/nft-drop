@@ -236,12 +236,12 @@ const Home: NextPage = () => {
               <div className={styles.mintCompletionArea}>
               {claimedSupply && unclaimedSupply ? (
                     <p>
-              {/*
+              
                       <b>{numberClaimed}</b>
                       {" / "}
                       {numberTotal}
                       {" Minted."}
-              */}
+              
                     </p>
                   ) : (
                     <p>Loading...</p>
