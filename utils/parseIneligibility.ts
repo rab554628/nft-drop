@@ -1,4 +1,4 @@
-import { ClaimEligibility } from "@thirdweb-dev/sdk@3.10.29";
+import { ClaimEligibility } from "@thirdweb-dev/sdk";
 
 export function parseIneligibility(
   reasons: ClaimEligibility[],

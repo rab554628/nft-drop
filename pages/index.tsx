@@ -10,7 +10,7 @@ import {
   useContractMetadata,
   useUnclaimedNFTSupply,
   Web3Button,
-} from "@thirdweb-dev/react@3.14.9";
+} from "@thirdweb-dev/react";
 import { BigNumber, utils } from "ethers";
 import type { NextPage } from "next";
 import Image from "next/image";
@@ -241,7 +241,7 @@ const Home: NextPage = () => {
                       {" / "}
                       {numberTotal}
                       {" Minted."}
-          
+              
                     </p>
                   ) : (
                     <p>Loading...</p>
