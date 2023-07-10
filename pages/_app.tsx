@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { ThirdwebProvider } from "@thirdweb-dev/react@3.14.9";
 import "../styles/globals.css";
 import Head from "next/head";
 import ThirdwebGuideFooter from "../components/GitHubLink";

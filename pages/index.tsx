@@ -10,7 +10,7 @@ import {
   useContractMetadata,
   useUnclaimedNFTSupply,
   Web3Button,
-} from "@thirdweb-dev/react";
+} from "@thirdweb-dev/react@3.14.9";
 import { BigNumber, utils } from "ethers";
 import type { NextPage } from "next";
 import Image from "next/image";
