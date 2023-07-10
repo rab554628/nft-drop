@@ -241,7 +241,7 @@ const Home: NextPage = () => {
                       {" / "}
                       {numberTotal}
                       {" Minted."}
-              
+          
                     </p>
                   ) : (
                     <p>Loading...</p>
