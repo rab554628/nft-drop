@@ -229,7 +229,7 @@ const Home: NextPage = () => {
               <MediaRenderer
                 className={styles.image}
                 src={"../png1.png"}
-                alt={"NFT Collection"}
+                alt={`${contractMetadata?.name} preview image`}
               />
 
               {/* Amount claimed so far */}
@@ -237,7 +237,10 @@ const Home: NextPage = () => {
               {claimedSupply && unclaimedSupply ? (
                     <p>
               
-                 
+                      <b>{numberClaimed}</b>
+                      {" / "}
+                      {numberTotal}
+                      {" Minted."}
               
                     </p>
                   ) : (
@@ -267,7 +270,24 @@ const Home: NextPage = () => {
               ) : (*/}
                 <>
                   <p></p>
-             
+                  <div className={styles.quantityContainer}>
+                    <button
+                      className={`${styles.quantityControlButton}`}
+                      onClick={() => setQuantity(quantity - 1)}
+                      disabled={quantity <= 1}
+                    >
+                       &#9660;
+                    </button>
+
+                    <h4>{quantity}</h4>
+                    <button
+                      className={`${styles.quantityControlButton}`}
+                      onClick={() => setQuantity(quantity + 1)}
+                      disabled={quantity >= maxClaimable}
+                    >
+                      &#9650;
+                    </button>
+                  </div>
 
                   <div className={styles.mintContainer}>
                 
