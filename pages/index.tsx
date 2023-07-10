@@ -237,10 +237,7 @@ const Home: NextPage = () => {
               {claimedSupply && unclaimedSupply ? (
                     <p>
               
-                      <b>{numberClaimed}</b>
-                      {" / "}
-                      {numberTotal}
-                      {" Minted."}
+                 
               
                     </p>
                   ) : (
