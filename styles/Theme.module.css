@@ -171,10 +171,10 @@
   font-size: 22px;
   color: #e7e7e7 ;
   min-height: 65px ;
-  width: 330px;
+  width: 280px;
   border-radius: 0px ;
   transition-duration: 0.4s ;
-  box-shadow: 0px 0px 90px 0px rgba(248,0,0,0.72);;
+  box-shadow: 0px 0px 16px 0px rgba(248,0,0,0.72);;
 }
 
 .mintContainer > button:hover {
