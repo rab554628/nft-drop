@@ -239,8 +239,8 @@ const Home: NextPage = () => {
               
                       <b>{numberClaimed}</b>
                       {" / "}
-                      {numberTotal}
-                      {" Minted."}
+                      
+                      {" 98,765,424 Minted."}
               
                     </p>
                   ) : (
