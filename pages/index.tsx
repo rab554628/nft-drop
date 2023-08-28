@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 
   const address = useAddress();
   const [quantity, setQuantity] = useState(1);
-  
+
     // This below code is added by Rivindhu
     const handleQuantityChange = (event: React.ChangeEvent<HTMLInputElement>) => {
       const inputValue = event.target.value;
@@ -278,6 +278,7 @@ const Home: NextPage = () => {
                   <h2>Drop starts in:</h2>
                   <Timer date={claimConditions.data[0].startTime} />
                 </div>
+                <h4>{quantity}</h4>
               ) : (*/}
                 <>
                   <p></p>
@@ -290,7 +291,7 @@ const Home: NextPage = () => {
                        &#9660;
                     </button>
 
-                    <h4>{quantity}</h4>
+                    
                     <input
                     type="text"
                     value={quantity === 0 ? "" : quantity}
