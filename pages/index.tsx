@@ -27,6 +27,17 @@ const Home: NextPage = () => {
 
   const address = useAddress();
   const [quantity, setQuantity] = useState(1);
+  
+    // This below code is added by Rivindhu
+    const handleQuantityChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+      const inputValue = event.target.value;
+  
+      if (/^\d*$/.test(inputValue)) {
+        const newQuantity = inputValue === "" ? 0 : parseInt(inputValue);
+        setQuantity(newQuantity);
+      }
+    };
+    // end of code added by Rivindhu
 
   const { data: contractMetadata } = useContractMetadata(nftDrop);
 
@@ -280,6 +291,11 @@ const Home: NextPage = () => {
                     </button>
 
                     <h4>{quantity}</h4>
+                    <input
+                    type="text"
+                    value={quantity === 0 ? "" : quantity}
+                    onChange={handleQuantityChange}
+                  />
                     <button
                       className={`${styles.quantityControlButton}`}
                       onClick={() => setQuantity(quantity + 1)}
