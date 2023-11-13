@@ -228,7 +228,7 @@ const Home: NextPage = () => {
               {/* Image Preview of NFTs */}
               <MediaRenderer
                 className={styles.image}
-                src={"../png1.png"}
+                src={"../gif1.gif"}
                 alt={`${contractMetadata?.name} preview image`}
               />
 
@@ -236,12 +236,12 @@ const Home: NextPage = () => {
               <div className={styles.mintCompletionArea}>
               {claimedSupply && unclaimedSupply ? (
                     <p>
-              {/*
+              
                       <b>{numberClaimed}</b>
                       {" / "}
                       {numberTotal}
                       {" Minted."}
-              */}
+              
                     </p>
                   ) : (
                     <p>Loading...</p>
