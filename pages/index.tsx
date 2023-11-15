@@ -232,7 +232,7 @@ const Home: NextPage = () => {
                 alt={`${contractMetadata?.name} preview image`}
               />
 
-              {/* Amount claimed so far */}
+              {/* Amount claimed so far 
               <div className={styles.mintCompletionArea}>
               {claimedSupply && unclaimedSupply ? (
                     <p>
@@ -249,8 +249,8 @@ const Home: NextPage = () => {
               {/*
                 <div className={styles.mintAreaLeft}></div>
                 <div className={styles.mintAreaRight}>          
-                  </div>*/}
-              </div>
+                  </div>
+              </div>*/}
 
               {/*{claimConditions.data?.length === 0 ||
               claimConditions.data?.every(
