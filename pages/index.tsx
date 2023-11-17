@@ -102,7 +102,7 @@ const Home: NextPage = () => {
         try {
           bnMaxClaimable = BigNumber.from(snapshotClaimable);
         } catch (e) {
-          // fall back to default case
+          // fall back to default case    
         }
       }
     }
