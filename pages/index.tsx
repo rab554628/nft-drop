@@ -19,8 +19,21 @@ import Timer from "../components/Timer";
 import styles from "../styles/Theme.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
 
+// For clientID
+import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
+import { ThirdwebProvider } from "@thirdweb-dev/react";
+import "./styles/globals.css";
+import { Toaster } from "./components/ui/Toaster";
+import { getGasless } from "./utils/getGasless";
+const clientIdConst = "94d71e7b123e36e27604a16980180ef0";
+const clientId = urlParams.get("clientId") || clientIdConst || "";
+// For clientID
+
 // Put Your NFT Drop Contract address from the dashboard here
 const myNftDropContractAddress = "0x6404d88e3a8d5C171A2261CAb76d718f0e34e08c";
+
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);

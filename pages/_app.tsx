@@ -29,3 +29,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 export default MyApp;
+export const clientIdConst = "94d71e7b123e36e27604a16980180ef0";
